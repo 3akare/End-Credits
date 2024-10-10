@@ -10,6 +10,15 @@
             margin: 0px;
             box-sizing: border-box;
         }
+        .video-div {
+              width: 640px;
+              height: 364px;
+              max-width: 640px;
+              max-height: 364px;
+              min-width: 640px;
+              min-height: 364px;
+        }
+
         .canvas-container{
             width: fit-content;
             overflow-y: scroll;
@@ -24,6 +33,10 @@
 <body>
     <div class="canvas-container">
         <canvas class="canvas"></canvas>
+    </div>
+    <div class="video-div">
+        <video playsInline loop style="width: 100%; height: auto;" controls src="http://localhost:8080/api/v1/media/">
+        </video>
     </div>
     <button>Download Image</button>
 </body>

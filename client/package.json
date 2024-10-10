@@ -1,0 +1,19 @@
+{
+  "name": "endcredits",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "downloadjs": "^1.4.7",
+    "html-to-image": "^1.11.11",
+    "vite": "^5.4.8"
+  }
+}

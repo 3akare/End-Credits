@@ -1,6 +1,14 @@
 import * as htmlToImage from "html-to-image"
 // import download from "downloadjs"
 
+const canvasContainer = document.querySelector(".canvas-container");
+const videoContainer = document.querySelector(".video-container");
+const loading = document.querySelector(".loading");
+const button = document.querySelector("button");
+
+videoContainer.style.display = "none";
+loading.style.display = "none";
+
 const CANVAS_WIDTH = 640;
 const CANVAS_HEIGHT = 320;
 
@@ -30,14 +38,14 @@ const generateName = () => {
 }
 
 //download image
-document
-    .querySelector("button")
-    .addEventListener("click", () => {
+button.addEventListener("click", () => {
         htmlToImage.toPng(canvas).then(function (base64img) {
             const data = {
                 imgName: `${generateName()}`,
                 base64img
             }
+            canvasContainer.style.display = "none";
+            loading.style.display = "block";
             fetch("http://localhost:8080/api/v1/b64-image/create", {
                 method: 'POST',
                 headers: {
@@ -46,11 +54,20 @@ document
                 body: JSON.stringify(data),
             })
             .then(response => response.json())
-            .then(data => console.log(data))
+            .then(data => {
+                button.style.display = "none";
+                console.log(data)
+                if(data.status === "success") {
+                    loading.style.display = "none";
+                    videoContainer.style.display = "block";
+                    alert("Image Downloaded Successfully")
+                }else{
+                    alert("failed")
+                }
+            })
             .catch((error) => {
                 console.error('An Error Occurred: ', error);
             })
-            // console.log(url)
             // download(url, `${generateName()}.png`)
         })
     })

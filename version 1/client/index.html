@@ -10,7 +10,7 @@
             margin: 0px;
             box-sizing: border-box;
         }
-        .video-div {
+        .video-container {
               width: 640px;
               height: 364px;
               max-width: 640px;
@@ -32,13 +32,25 @@
 </head>
 <body>
     <div class="canvas-container">
+        <br>
+        <p>
+            This is a picture. Scroll down to see the full thing before downloading.
+        </p>
+        <br>
         <canvas class="canvas"></canvas>
     </div>
-    <div class="video-div">
+    <div class="loading">
+        loading...
+    </div>
+    <div class="video-container">
+        <br>
+        <p>This is the video</p>
+        <br>
         <video playsInline loop style="width: 100%; height: auto;" controls src="http://localhost:8080/api/v1/media/">
         </video>
     </div>
-    <button>Download Image</button>
+    <br>
+    <button>Change image to video</button>
 </body>
 <script type="module" src="./main.js" defer></script>
 </html>

@@ -27,7 +27,7 @@ public class MediaController {
         try
         {
             StreamingResponseBody responseStream;
-            String filePathString = "./video.mkv";
+            String filePathString = "./images/output.mp4";
             Path filePath = Paths.get(filePathString);
             Long fileSize = Files.size(filePath);
             byte[] buffer = new byte[1024];

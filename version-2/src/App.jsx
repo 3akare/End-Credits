@@ -1,10 +1,27 @@
-
+import { useEffect, useState } from "react";
+import {ScreenSizeWarning, CreditsBuilder} from "./components/index.js"
 function App() {
-  return (
-    <h1 className="text-2xl text-amber-700">
-        Hello world
-    </h1>
-  )
+    const minScreenWidth = 1500;
+    const [isScreenSupported, setIsScreenSupported] = useState(window.innerWidth > minScreenWidth);
+
+    useEffect(() => {
+        const handleResize = () => {
+            setIsScreenSupported(window.innerWidth > minScreenWidth);
+        };
+        handleResize();
+        window.addEventListener("resize", handleResize);
+        return () => {
+            window.removeEventListener("resize", handleResize);
+        };
+    }, []);
+
+    return (
+        isScreenSupported ? (
+            <CreditsBuilder/>
+        ) : (
+            <ScreenSizeWarning />
+        )
+    );
 }
 
-export default App
+export default App;

@@ -1,0 +1,68 @@
+export const data = [
+    {
+        title: "Movie Cast",
+        type: "cast",
+        content: [
+            { realName: "Robert Downey Jr.", characterName: "Tony Stark / Iron Man" },
+            { realName: "Chris Evans", characterName: "Steve Rogers / Captain America" },
+            { realName: "Scarlett Johansson", characterName: "Natasha Romanoff / Black Widow" },
+            { realName: "Chris Hemsworth", characterName: "Thor" },
+            { realName: "Mark Ruffalo", characterName: "Bruce Banner / Hulk" },
+            { realName: "Jeremy Renner", characterName: "Clint Barton / Hawkeye" },
+            { realName: "Tom Hiddleston", characterName: "Loki" },
+            { realName: "Samuel L. Jackson", characterName: "Nick Fury" },
+            { realName: "Cobie Smulders", characterName: "Maria Hill" },
+            { realName: "Clark Gregg", characterName: "Phil Coulson" },
+        ]
+    },
+    {
+        title: "Stunt Crew",
+        type: "crew",
+        content: [
+            { name: "Tom Struthers", role: "Stunt Coordinator" },
+            { name: "Ilram Choi", role: "Stunt Double for Tony Stark" },
+            { name: "Bobby Holland Hanton", role: "Stunt Double for Thor" },
+            { name: "Heidi Moneymaker", role: "Stunt Double for Black Widow" },
+            { name: "Hiro Koda", role: "Fight Choreographer" },
+            { name: "George Cottle", role: "Stunt Driver" },
+            { name: "Matt LeFevour", role: "Stunt Double for Captain America" },
+            { name: "J.J. Perry", role: "Fight Choreographer" },
+            { name: "Marny Eng", role: "Stunt Performer" },
+            { name: "Kyle Hebert", role: "Safety Coordinator" },
+            { name: "Tom Struthers", role: "Stunt Coordinator" },
+            { name: "Ilram Choi", role: "Stunt Double for Tony Stark" },
+            { name: "Bobby Holland Hanton", role: "Stunt Double for Thor" },
+            { name: "Heidi Moneymaker", role: "Stunt Double for Black Widow" },
+            { name: "Hiro Koda", role: "Fight Choreographer" },
+            { name: "George Cottle", role: "Stunt Driver" },
+            { name: "Matt LeFevour", role: "Stunt Double for Captain America" },
+            { name: "J.J. Perry", role: "Fight Choreographer" },
+            { name: "Marny Eng", role: "Stunt Performer" },
+            { name: "Kyle Hebert", role: "Safety Coordinator" },
+            { name: "Tom Struthers", role: "Stunt Coordinator" },
+            { name: "Ilram Choi", role: "Stunt Double for Tony Stark" },
+            { name: "Bobby Holland Hanton", role: "Stunt Double for Thor" },
+            { name: "Heidi Moneymaker", role: "Stunt Double for Black Widow" },
+            { name: "Hiro Koda", role: "Fight Choreographer" },
+            { name: "George Cottle", role: "Stunt Driver" },
+            { name: "Matt LeFevour", role: "Stunt Double for Captain America" },
+            { name: "J.J. Perry", role: "Fight Choreographer" },
+            { name: "Marny Eng", role: "Stunt Performer" },
+            { name: "Kyle Hebert", role: "Safety Coordinator" },
+        ]
+    },
+    {
+        title: "Music",
+        type: "music",
+        content: [
+            { composer: "Alan Silvestri", artist: "Alan Silvestri", songTitle: "The Avengers Theme" },
+            { composer: "Alan Silvestri", artist: "London Symphony Orchestra", songTitle: "Assemble" },
+            { composer: "Alan Silvestri", artist: "Alan Silvestri", songTitle: "A Promise" },
+            { composer: "Brian Tyler", artist: "Brian Tyler", songTitle: "Battle Fury" },
+            { composer: "Danny Elfman", artist: "Danny Elfman", songTitle: "Avengers Assemble" },
+            { composer: "Alan Silvestri", artist: "Alan Silvestri", songTitle: "One Way Trip" },
+            { composer: "Lorne Balfe", artist: "Lorne Balfe", songTitle: "Hulk Smash" },
+            { composer: "Alan Silvestri", artist: "Alan Silvestri", songTitle: "End Credits" },
+        ]
+    }
+];
